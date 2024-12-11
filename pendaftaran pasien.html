@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pasien Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .message {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pendaftaran Pasien</h1>
+        <form id="registrationForm">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="kategori">Kategori Pasien:</label>
+            <select id="kategori" name="kategori" required>
+                <option value="">Pilih Kategori</option>
+                <option value="BPJS">BPJS</option>
+                <option value="Umum">Umum</option>
+            </select>
+
+            <label for="poli">Pilih Poli:</label>
+            <select id="poli" name="poli" required>
+                <option value="">--Pilih Poli--</option>
+                <option value="Poli Umum">Poli Umum</option>
+                <option value="Poli Gigi">Poli Gigi</option>
+                <option value="Poli Anak">Poli Anak</option>
+                <option value="Poli Mata">Poli Mata</option>
+                <option value="Poli Kulit dan Kelamin">Poli Kulit dan Kelamin</option>
+                <option value="Poli Spesialis THT">Poli Spesialis THT</option>
+                <option value="Poli Bedah Mulut">Poli Bedah Mulut</option>
+                <option value="Poli Penyakit Dalam">Poli Penyakit Dalam</option>
+                <option value="Poli Bedah Tulang">Poli Bedah Tulang</option>
+                <option value="Poli Spesialis Syaraf">Poli Spesialis Syaraf</option>
+                <option value="Poli Bedah Onkologi">Poli Bedah Onkologi</option>
+                <option value="Poli Paru">Poli Paru</option>
+            </select>
+
+            <label for="dokter">Pilih Dokter:</label>
+            <select id="dokter" name="dokter" required>
+                <option value="">--Pilih Dokter--</option>
+            </select>
+
+            <label for="jadwal">Jadwal Praktek:</label>
+            <select id="jadwal" name="jadwal" required>
+                <option value="">--Pilih Jadwal--</option>
+             </select>
+
+            <input type="submit" value="Daftar">
+        </form>
+
+        <div class="message" id="message"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+    <!-- <script src="jadwal dokter.js"></script> -->
+
+    
+
+</body>
+</html>
